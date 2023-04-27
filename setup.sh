@@ -1,7 +1,9 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm neovim tmux alacritty git docker rustup \
-	firefox neofetch ripgrep nodejs cmake starship
+	firefox neofetch ripgrep nodejs cmake starship npm
+
+
 
 # neovim setup
 git clone https://github.com/CreepyPvP/VimSetup ~/.config/nvim
