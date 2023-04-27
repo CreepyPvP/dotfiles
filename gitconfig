@@ -1,0 +1,39 @@
+[alias]
+        st = status
+        cm = commit
+        cmm = commit -m
+        ca = commit --amend
+        po = push origin
+        br = branch
+        co = checkout
+        fa = fetch --all
+        rb = rebase
+        sth = stash
+        sthc = stash clear
+        sthp = stash pop
+        rao = remote add origin
+        aa = add -A
+        ap = add -p
+
+[core]
+        editor = "nvim"
+
+[color]
+        ui = true
+
+[push]
+        default = "current"
+
+[filter "lfs"]
+        clean = git-lfs clean %f
+        smudge = git-lfs smudge %f
+        required = true
+[user]
+        email = interruptedThread@gmail.com
+        name = CreepyPvP
+	signinkey = 05D422821167858EAED66AD3D0C84596FF775634
+        ; signingkey = KEYID
+[credential]
+    helper = store
+[commit]
+	gpgsign = true
