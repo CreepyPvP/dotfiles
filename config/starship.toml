@@ -33,7 +33,6 @@ $jobs\
 $memory_usage\
 [ ](fg:#242424)\
 $cmd_duration\
-$fill\
 $line_break\
 [╰╴](fg:#505050)\
 [$status\
