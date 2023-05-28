@@ -14,7 +14,7 @@
         rao = remote add origin
         aa = add -A
         ap = add -p
-
+        ct = clone --bare
 [core]
         editor = "nvim"
 
@@ -30,10 +30,10 @@
         required = true
 [user]
         email = interruptedThread@gmail.com
-        name = CreepyPvP
-	signinkey = 05D422821167858EAED66AD3D0C84596FF775634
+        name = Luis Dietl
+	    signinkey = 05D422821167858EAED66AD3D0C84596FF775634
         ; signingkey = KEYID
 [credential]
-    helper = store
+        helper = store
 [commit]
-	gpgsign = true
+	    gpgsign = true
