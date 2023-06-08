@@ -1,8 +1,20 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm neovim tmux alacritty git docker rustup \
-	firefox neofetch ripgrep nodejs cmake starship npm
+	firefox neofetch ripgrep nodejs cmake npm
 
+
+# font 
+sudo pacman -S --noconfirm extra/ttf-cascadia-code-nerd
+
+# zsh
+sudo pacman -S --noconfirm zsh
+chsh -s $(which zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+cp ./config/zshrc ~/.zshrc
 
 
 # neovim setup
@@ -22,6 +34,6 @@ git clone https://github.com/eendroroy/alacritty-theme.git ~/.config/alacritty/t
 cp ./config/gitconfig ~/.gitconfig
 
 # starship setup
-rustup default stable
-cp ./config/starship.toml ~/.config/starship.toml
+# rustup default stable
+# cp ./config/starship.toml ~/.config/starship.toml
 # echo "eval \"$(starship init bash)\"" >> ~/.bashrc
