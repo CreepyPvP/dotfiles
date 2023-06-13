@@ -39,6 +39,7 @@ cp ./config/i3 ~/.config/ -r
 # scripts
 sudo install ./scripts/sessionizer.sh /usr/bin
 sudo install ./scripts/cht.sh /usr/bin
+# todo: move tmux commands + tmux languages
 
 # starship setup
 # rustup default stable
