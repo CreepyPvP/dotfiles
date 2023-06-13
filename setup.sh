@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm neovim tmux alacritty git docker rustup \
-	firefox neofetch ripgrep nodejs cmake npm
+	firefox neofetch ripgrep nodejs cmake npm fzf
 
 
 # font 
@@ -32,6 +32,13 @@ git clone https://github.com/eendroroy/alacritty-theme.git ~/.config/alacritty/t
 
 # git setup
 cp ./config/gitconfig ~/.gitconfig
+
+# i3 setup
+cp ./config/i3 ~/.config/ -r
+
+# scripts
+sudo install ./scripts/sessionizer.sh /usr/bin
+sudo install ./scripts/cht.sh /usr/bin
 
 # starship setup
 # rustup default stable
