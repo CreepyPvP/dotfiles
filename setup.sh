@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm neovim tmux alacritty git docker rustup \
-	firefox neofetch ripgrep nodejs cmake npm fzf
+	firefox neofetch ripgrep nodejs cmake npm fzf picom
 
 
 # font 
