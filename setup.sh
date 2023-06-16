@@ -1,8 +1,7 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm neovim tmux alacritty git docker rustup \
-	firefox neofetch ripgrep nodejs cmake npm fzf picom docker-compose
-
+	firefox neofetch ripgrep nodejs cmake npm fzf picom docker-compose polybar
 
 # font 
 sudo pacman -S --noconfirm extra/ttf-cascadia-code-nerd
