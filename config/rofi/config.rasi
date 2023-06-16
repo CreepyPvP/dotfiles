@@ -1,0 +1,9 @@
+configuration {
+    show-icons: true;
+    terminal: "alacritty";
+    sidebar-mode: true;
+    hide-scrollbar: true;
+    disable-history: false;
+}
+
+@theme "themes/catppuccin-macchiato"
