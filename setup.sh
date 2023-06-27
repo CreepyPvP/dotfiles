@@ -1,7 +1,8 @@
 #!/bin/bash
 
 sudo pacman -S --noconfirm neovim tmux alacritty git docker rustup \
-	firefox neofetch ripgrep nodejs cmake npm fzf picom docker-compose polybar
+	firefox neofetch ripgrep nodejs cmake npm fzf picom docker-compose polybar \
+    rofi
 
 # font 
 sudo pacman -S --noconfirm extra/ttf-cascadia-code-nerd
@@ -34,6 +35,9 @@ cp ./config/gitconfig ~/.gitconfig
 
 # i3 setup
 cp ./config/i3 ~/.config/ -r
+cp ./config/rofi ~/.config/rofi -r
+cp ./config/picom ~/.config/picom -r
+cp ./config/polybar ~/.config/polybar -r
 
 # scripts
 sudo install ./scripts/sessionizer.sh /usr/bin
