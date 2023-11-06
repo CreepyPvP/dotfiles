@@ -1,9 +1,16 @@
-window:
-  opacity: 0.75
+# window:
+  # opacity: 0.75
 font:
   size: 12
   normal:
-    family: CaskaydiaCove Nerd Font
+    family: Azeret Mono
+    style: Regular
+  italic:
+    family: Azeret Mono
+    style: Italic
+  bold:
+    family: Azeret Mono
+    style: Bold
 mouse:
   hide_when_typing: true
 
